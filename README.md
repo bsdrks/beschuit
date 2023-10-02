@@ -52,7 +52,7 @@ npm install
 npm run start
 ```
 
-The application can now be accessed at: (http://localhost:3000)[http://localhost:3000].
+The application can now be accessed at: [http://localhost:3000](http://localhost:3000).
 
 ## Testing
 
