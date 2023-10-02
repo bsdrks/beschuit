@@ -36,9 +36,6 @@ If I had more time, I would (ordered by importance):
 - complete documentation
 - set up baseline benchmarks for the API and for the round-trip e2e tests
 
-## Requirements
-- 
-
 ## Running
 
 In `./server`, run:
