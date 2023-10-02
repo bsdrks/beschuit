@@ -1,0 +1,14 @@
+{
+    "extends": "@tsconfig/strictest",
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "lib": ["es2020"],
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "outDir": "dist",
+        "rootDir": "src",
+        "baseUrl": "./src",
+        "target": "es2020",
+        "types": ["node"]
+    }
+}

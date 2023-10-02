@@ -1,0 +1,48 @@
+type Query {
+    readTasks: [Task]
+}
+
+type Mutation {
+    createTask(task: CreateTaskInput!): CreateTaskMutationResponse
+    removeTask(id: ID!): RemoveTaskMutationResponse
+    updateTask(id: ID!, task: UpdateTaskInput!): UpdateTaskMutationResponse
+    toggleTask(id: ID!): ToggleTaskMutationResponse
+}
+
+type Task {
+    id: ID!
+    title: String!
+    done: Boolean!
+}
+
+type User {
+    id: ID!
+    username: String!
+    password: String!
+}
+
+input CreateTaskInput {
+    title: String!
+    done: Boolean!
+}
+
+input UpdateTaskInput {
+    title: String!
+    done: Boolean!
+}
+
+type ToggleTaskMutationResponse {
+    toggled: Boolean!
+}
+
+type CreateTaskMutationResponse {
+    created: Boolean!
+}
+
+type RemoveTaskMutationResponse {
+    removed: Boolean!
+}
+
+type UpdateTaskMutationResponse {
+    updated: Boolean!
+}

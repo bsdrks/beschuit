@@ -1,0 +1,41 @@
+{
+    "name": "bizcuit-todo",
+    "version": "1.0.0",
+    "description": "Bizcuit TODO assignment",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "generate": "graphql-codegen --config codegen.yml",
+        "compile": "npm run generate && tsc",
+        "start": "npm run compile && node ./dist/index.js",
+        "lint": "eslint . --ext .ts",
+        "prettier": "prettier --write ."
+    },
+    "author": "Bas Dirks <bas.dirks@protonmail.com>",
+    "license": "ISC",
+    "dependencies": {
+        "@apollo/server": "^4.9.3",
+        "@types/node": "^20.7.0",
+        "argon2": "^0.31.1",
+        "better-sqlite3": "^8.6.0",
+        "graphql": "^16.8.1"
+    },
+    "devDependencies": {
+        "@graphql-codegen/cli": "5.0.0",
+        "@graphql-codegen/typescript": "4.0.1",
+        "@graphql-codegen/typescript-resolvers": "4.0.1",
+        "@tsconfig/strictest": "^2.0.2",
+        "@types/argon2": "^0.15.0",
+        "@types/better-sqlite3": "^7.6.5",
+        "@typescript-eslint/eslint-plugin": "^6.7.3",
+        "eslint": "^8.50.0",
+        "eslint-config-prettier": "^9.0.0",
+        "eslint-config-standard-with-typescript": "^39.1.0",
+        "eslint-plugin-import": "^2.28.1",
+        "eslint-plugin-n": "^16.1.0",
+        "eslint-plugin-promise": "^6.1.1",
+        "prettier": "^3.0.3",
+        "typescript": "^5.2.2"
+    }
+}
